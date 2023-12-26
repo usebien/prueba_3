@@ -11,5 +11,6 @@ with info:
     st.markdown('**Sale con fritas**')
 
 with dataset:
-    data = pd.read_csv('/Users/javi/Documents/APP/prueba_2/data/customers.csv',delimiter=",", decimal=".")
+    url = "https://raw.githubusercontent.com/usebien/prueba_3/main/customers.csv"
+    data = pd.read_csv(url)
     st.write(data.head(20))        
